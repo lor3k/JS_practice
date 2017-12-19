@@ -23,3 +23,21 @@ adjustments: {
 }
 
 console.log(cart.getPrice.call(order)) // wywołanie metody obiektu cart na obiekcie order
+
+/***********************************************************************/
+
+function Tree(age, height, radius, hardness){
+this.age = age
+this.height = height
+this.radius = radius
+this.hardness = hardness
+
+this.getPrice = function(){
+return this.hardness * this.height * 10 + '$'
+}}
+
+var sosna = new Tree(15, 20, 1, 1)
+
+sosna instanceof Object // true
+
+
